@@ -5,9 +5,12 @@ tambahkan deskripsi project disini
 Test Case Document
 sertakan link test case untuk setiap platform:
 
-API: link test case
+API: [link test case] -> (https://docs.google.com/spreadsheets/d/15qBC4StAkO1TD0T9Dj-AlvAhqlRFWvh4uVLKq9v9qB4/edit?usp=sharing)
+
 Web: [link test case] -> (https://docs.google.com/spreadsheets/d/1FhgYPv1sDYCI4pC9rEvSwX94pUSronvf_R9EN3of8EI/edit?usp=sharing)
+
 Mobile: link test case
+
 Tech Stacks
 sebutkan daftar tools dan framework yang digunakan dalam bentuk list seperti ini:
 
