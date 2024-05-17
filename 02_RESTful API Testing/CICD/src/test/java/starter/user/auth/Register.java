@@ -22,18 +22,19 @@ public class Register {
     }
 
     @Step("I set the wrong API endpoint for user registration")
-    public void setWrongApiEndpointForUserRegistration() {
+    public String setWrongApiEndpointForUserRegistration() {
+        return wrongUrl;
     }
 
     @Step("I send a POST request to register a new user with valid data")
     public void sendRegisterRequestWithValidData() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "kiwwik12345@mail.com");
+        requestBody.put("email", "tiuumini@gmail.com");
         requestBody.put("password", "123123");
-        requestBody.put("fullname", "Fireman");
+        requestBody.put("fullname", "Firmansyah1333");
 
         SerenityRest.given()
-                .header("Content-Type", "application/json")
+                .contentType("application/json")
                 .body(requestBody.toString())
                 .post(setApiEndpoint());
     }
@@ -49,9 +50,10 @@ public class Register {
         String schema = helper.getResponseSchema(JsonSchema.REGISTER);
 
         restAssuredThat(response -> response.body("data.ID", Matchers.notNullValue()));
-        restAssuredThat(response -> response.body("data.Fullname", equalTo("Fireman")));
-        restAssuredThat(response -> response.body("data.Email", equalTo("kiwwik12345@mail.com"))); //setiap tes diupdate
+        restAssuredThat(response -> response.body("data.FullName", equalTo("Firmansyah1333")));
+        restAssuredThat(response -> response.body("data.Email", equalTo("tiuumini@gmail.com"))); //setiap tes diupdate
         restAssuredThat(response -> response.body("data.Password", equalTo("123123")));
+
 
         restAssuredThat(response -> response.body(matchesJsonSchema(schema)));
     }
@@ -61,8 +63,5 @@ public class Register {
         restAssuredThat(response -> response.statusCode(400));
     }
 
-    @Step("I receive an error message 'Endpoint Not Found'")
-    public void receiveErrorMessageEndpointNotFound() {
-        restAssuredThat(response -> response.body("error", equalTo("Endpoint Not Found")));
-    }
+
 }

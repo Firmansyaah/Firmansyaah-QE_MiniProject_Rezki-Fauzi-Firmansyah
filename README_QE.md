@@ -1,6 +1,7 @@
 Project Name
 About Project
 tambahkan deskripsi project disini
+Link Github CI/CD : -> https://github.com/Firmansyaah/MiniProject-CI-CD
 
 Test Case Document
 sertakan link test case untuk setiap platform:
@@ -9,7 +10,7 @@ API: [link test case] -> (https://docs.google.com/spreadsheets/d/15qBC4StAkO1TD0
 
 Web: [link test case] -> (https://docs.google.com/spreadsheets/d/1FhgYPv1sDYCI4pC9rEvSwX94pUSronvf_R9EN3of8EI/edit?usp=sharing)
 
-Mobile: link test case
+Mobile: [link test case] -> (https://docs.google.com/spreadsheets/d/1dIm_DWfF6IPTgGCe3zpdC8i9ERKk0jsEloZgqTd6bFg/edit?usp=sharing)
 
 Tech Stacks
 sebutkan daftar tools dan framework yang digunakan dalam bentuk list seperti ini:
